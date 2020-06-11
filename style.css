@@ -1,4 +1,12 @@
-body {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
   background-color: cadetblue;
   color: white;
+  width: 414px;
+  height: 736px;
 }
