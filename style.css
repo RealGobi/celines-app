@@ -7,8 +7,8 @@
 .container {
   background-color: #eee;
   color: white;
-  width: 414px;
-  height: 736px;
+  width: 375px;
+  max-height: 667px;
 }
 
 .header {
@@ -27,18 +27,15 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 25vh);
+  gap: 5px;
+  border-radius: 4px;
   grid-template-areas: 
   "item1 item2 item3"
   "item4 item5 item6"
   "item7 item8 item9"
-  "item10 item11 item12"
-  ;
-}
-
-.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12 {
-  width: 25px;
-  height: 25px;
+  "item10 item11 item12";
 }
 
 .item1 {
